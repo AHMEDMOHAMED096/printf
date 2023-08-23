@@ -15,10 +15,10 @@ int handle_digit(long n, int base)
 	if (n < 0)
 	{
 		write(1, "-", 1);
-		return (handle_digit(n * -1, base) + 1);
+		return (handle_digit(n * -1, base));
 	}
 	else if (n < base)
-	return (_putchar(symbols[n]) + 1);
+	return (_putchar(symbols[n]));
 	else
 	{
 		count = handle_digit(n / base, base);
