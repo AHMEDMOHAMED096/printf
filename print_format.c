@@ -15,7 +15,7 @@ int handle_format(char spec, va_list ap)
 	else if (spec == 's')
 	count += handle_str(va_arg(ap, char *));
 	else if (spec == 'i' || spec == 'd')
-	count += handle_digit((va_arg(ap, int)), 10);
+	count += handle_digit((long)(va_arg(ap, int)), 10);
 	else if (spec == 'x')
 	count += handle_hexa((long)(va_arg(ap, unsigned int)), 16, 'x');
 	else if (spec == 'X')
