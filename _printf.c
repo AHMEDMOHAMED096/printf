@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 					count += print_format(format[i + 1], ap);
 					i++;
 				}
-				if (format[i + 1] == ' ' )
+				if (format[i + 1] == ' ')
 				return (-1);
 				else
 				count += write(1, &format[i], 1);
