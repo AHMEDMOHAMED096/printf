@@ -40,10 +40,14 @@ int main(void)
     printf("Unknown:[%r]\n");
     _printf("%b\n", 98);
 	_printf("%");
+    print("%");
 	_printf("% ");
+    printf("% ");
 	_printf(NULL);
+    printf(NULL);
 	_printf("%\0");
-	_printf(NULL);
+    printf("%\0");
 	_printf("%s", NULL);
+    printf("%s", NULL);
     return (0);
 }
