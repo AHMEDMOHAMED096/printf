@@ -18,10 +18,10 @@ int handle_hexa(long n, int base, char casespecifier)
 	if (n < 0)
 	{
 		write(1, "-", 1);
-		return (handle_hexa(n * -1, base, casespecifier) + 1);
+		return (handle_hexa(n * -1, base, casespecifier));
 	}
 	else if (n < base)
-	return (_putchar(symbols[n]) + 1);
+	return (_putchar(symbols[n]));
 	else
 	{
 	count = handle_hexa(n / base, base, casespecifier);
