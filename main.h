@@ -11,10 +11,10 @@
 #include <string.h>
 
 int _printf(const char *format, ...);
-int print_format(char spec, va_list ap);
+int handle_format(char spec, va_list ap);
 int _putchar(char c);
-int print_hexa(long n, int base, char caseSpecifier);
-int print_digit(long n, int base);
-int print_str(char *str);
+int handle_hexa(long n, int base, char caseSpecifier);
+int handle_digit(long n, int base);
+int handle_str(char *str);
 
 #endif /* MAIN_H */

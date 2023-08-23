@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 				}
 				if (valid_spec)
 				{
-					count += print_format(format[i + 1], ap);
+					count += handle_format(format[i + 1], ap);
 					i++;
 				}
 				else

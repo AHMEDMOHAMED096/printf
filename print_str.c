@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* print_str - prints string to stdout
+* handle_str - prints string to stdout
 * @str: the string to be printed
 * Return: return number of printed characters
 */
 
-int print_str(char *str)
+int handle_str(char *str)
 {
 	int count = 0;
 
