@@ -15,12 +15,7 @@ int handle_hexa(long n, int base, char casespecifier)
 	char symbolsUpper[] = "0123456789ABCDEF";
 	char *symbols = (casespecifier == 'x') ? symbolsLower:symbolsUpper;
 
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		return (handle_hexa(n * -1, base, casespecifier));
-	}
-	else if (n < base)
+	if (n < base)
 	return (_putchar(symbols[n]));
 	else
 	{
