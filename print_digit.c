@@ -22,6 +22,6 @@ int handle_digit(long n, int base)
 	else
 	{
 		count = handle_digit(n / base, base);
-		return (count + handle_digit(n % base, base));
+		return (handle_digit(n % base, base));
 	}
 }
